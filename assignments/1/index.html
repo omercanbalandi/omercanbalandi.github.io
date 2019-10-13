@@ -55,7 +55,7 @@
             // 1. “Topla” düğmesine basınca “Metin Kutusu 1“ ve “Metin Kutusu 2” içerisine yazılmış iki sayıyı
             // toplayarak sonucu “alert()” metodunu kullanarak ekrana çıkaran JavaScript kodunu yazınız.
 
-            const numberInputs = Array.from(document.querySelectorAll(".numberInput"));
+            const numberInputs = document.querySelectorAll(".numberInput");
             const button1 = document.querySelector("#button1");
 
             const warningContainer = document.querySelector("#warningContainer");
@@ -96,7 +96,7 @@
             // metin değerini birleştirerek sonucu “alert()” metodunu kullanarak ekrana çıkaran JavaScript
             // kodunu yazınız.
 
-            const textInputs = Array.from(document.querySelectorAll(".textInput"));
+            const textInputs = document.querySelectorAll(".textInput");
             const button2 = document.querySelector("#button2");
 
             button2.addEventListener("click", function() {
