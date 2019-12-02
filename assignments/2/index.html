@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ömercan Balandı | 2018280065</title>
+
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            body {
+                font-family: 'IBM Plex Mono', monospace;
+            }
+
+            .info {
+                text-align: center;
+                margin-top: 20px;
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .app {
+                width: 550px;
+                background-color: #f4f4f4;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 50px;
+                align-items: center;
+            }
+
+            .toggle {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .app .toggle div {
+                padding: 10px;
+                width: 100%;
+                text-align: center;
+                cursor: pointer;
+                font-size: 18px;
+            }
+
+            .app .toggle div:hover {
+                background-color: bisque;
+            }
+
+            .active {
+                background-color: beige;
+                font-weight: bold;
+            }
+
+            .content {
+                background-color: beige;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 25px 10px;
+                display: none;
+            }
+
+            .input {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .input h4 {
+                margin-bottom: 5px;
+            }
+
+            .input button {
+                padding: 10px 15px;
+                font-family: 'IBM Plex Mono', monospace;
+                background: none;
+                border: 1px solid #aaa;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .input button:hover {
+                background-color: bisque;
+            }
+
+            input[type="text"] {
+                padding: 3px 8px;
+                display: block;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="info">
+            Ömercan Balandı 
+            2018280065
+        </div>
+
+        <div class="app">
+            <div class="toggle">
+                <div class="toggle-btn active" data-target="c1">Hindu Arap → Roma Rakamı</div>
+                <div class="toggle-btn" data-target="c2">Roma Rakamı → Hindu Arap</div>
+            </div>
+
+            <div class="content" style="display: block;" id="c1">
+                <div class="input">
+                    <h4>Girdi Giriniz 0 < deger < 4000</h4>
+                    <input type="text" id="toRomanInput">
+                </div>
+
+                <div class="input">
+                    <button id="toRomanButton">Çevir ↷</button>
+                </div>
+
+                <div class="input">
+                    <h4>Çıktı</h4>
+                    <h3 id="toRomanResult">Lütfen Geçerli Bir Değer Girin.</h3>
+                </div>
+            </div>
+
+            <div class="content" id="c2">
+                <div class="input">
+                    <h4>Girdi Giriniz 0 < deger < 4000</h4>
+                    <input type="text" id="toHinduArapInput">
+                </div>
+
+                <div class="input">
+                    <button id="toHinduArapButton">Çevir ↷</button>
+                </div>
+
+                <div class="input">
+                    <h4>Çıktı</h4>
+                    <h3 id="toHinduArapResult">Lütfen Geçerli Bir Değer Girin.</h3>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
